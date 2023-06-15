@@ -5,5 +5,6 @@ export default function fetchBitcoin(url, target) {
       const btcPreco = document.querySelector(target);
 
       btcPreco.innerText = (100 / btc.BRL.sell).toFixed(4);
-    });
+    })
+    .catch((erro) => console.log(Error(erro)));
 }
